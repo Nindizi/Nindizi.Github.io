@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<title>Contact me</title>
+</head>
+<body>
+<main class="main">
+    <div class="spacer"></div>
+    <div id="mainNav">
+        <nav>
+            <ul>
+                <li class="large-nav"><button onclick="location.href='portfolio.html'" class="nav_btn">Portfolio</button></li>
+                <li class="large-nav"><button onclick="location.href='contact.html'" class="nav_btn">Contact</button></li>
+                <li class="large-nav"><button onclick="location.href='index.html'" class="nav_btn">Home</button></li>
+                <li id="markdietzler">Mark Dietzler</li>
+            </ul>
+            <!-- end desktop nav -->
+            <!-- start mobile nav -->
+            <div id="mobile_nav">
+                <label for="nav-input">☰</label>
+                <input name="nav-input" id="nav-input" type="checkbox" />
+                    <ul>
+                        <li><a href="https://markdietzler.github.io/index.html">Home</a></li>
+                        <li><a href="https://markdietzler.github.io/portfolio.html">Portfolio</a></li>
+                        <li><a href="https://markdietzler.github.io/contact.html">Contact</a></li>
+                    </ul>
+            </div>
+            <!-- end mobile nav -->
+        </nav>
+    </div> <!-- end nav menu -->
+    
+    <div class="row">
+        <article class="col">
+            <section class="form">
+                <h2>Send Me A Message</h2>
+                <form action="" method="post">
+                    <label for="name">Name*</label>
+                    <input type="input" name="name"/>
+                    <label for="email">E-Mail*</label>
+                    <input type="input" name="email"/>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <input type="submit" id="submit_btn" value="Send It!">
+                    <!-- ***hidden area for form*** -->
+                    <input name="_next" value="http://markdietzler.github.io/thanks.html" type="hidden">
+                    <p>* denotes required entry</p>
+                </form>
+                
+                </section>
+            </article>
+            <article class="col">
+               <section>
+                <h3>Other Contacts:</h3>
+                    <ul>
+                        <li class="cell_list_item">(360) 633-XXXX</li>
+                        <li class="github_list_item"><a href="https://github.com/markdietzler">Github</a></li>
+                        <li class="email_list_item"><a href="mailto:markedietzler@gmail.com.invalid?subjectFound%20you%20via%20your%20web%20contact">Email</a></li>
+                        <li class="linkedin_list_item"><a href="https://www.linkedin.com/in/mark-dietzler-4b181756">Linkedin</a></li>
+                        <!--<li>Resume <a href="docs/resume.pdf">(PDF)</a> <a href="docs/resume.docx">(Docx)</a></li>-->
+                    </ul>
+                </section>
+            </article>
+        </div>
+        <footer class="row footer">
+            <p>Design and Content &copy; Mark Dietzler | 2020</p>
+        </footer>
+    </main>
+</body>
+</html>
